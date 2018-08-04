@@ -14,3 +14,5 @@ jsonify(json) # jsonify e otimo, pois nao precisa utilizar o cabecalho json e el
 
 usuario = Blueprint('usuario', __name__) # Define o Blueprint
 @usuario.route('/') # Define a rota
+
+render_template() # renderiza um html
