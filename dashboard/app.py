@@ -1,8 +1,10 @@
 from flask import Flask, render_template, Blueprint
-from blue_docker.b_docker import b_docker
+from blueprints.bdocker import bdocker
+from blueprints.bjenkis import jenkins
 
 app = Flask(__name__)
-app.register_blueprint(b_docker)
+app.register_blueprint(bdocker)
+app.register_blueprint(jenkins)
 
 
 @app.route('/')
