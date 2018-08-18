@@ -7,7 +7,7 @@
             <h1 class="panel-title clearfix">Jenkins</h1>
         </div>
         <div class="panel-body">
-            <h2>==NOME DO JOB==</h2>
+            <h2>{{ job }}</h2>
             <form action="/jenkins/reconfig" method="POST">
                 <input type="hidden" name="name" value="==NOME DO JOB==<">
                 <textarea class="form-control" name="xml" rows="16">==XML DO JOB==</textarea>
